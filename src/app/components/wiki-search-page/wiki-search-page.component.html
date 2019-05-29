@@ -1,0 +1,10 @@
+<div class="wiki-search-page" [ngClass]="theme$ | async">
+  {{theme$ | async}}
+  <header-bar></header-bar>
+  <wiki-search-bar (onSearch)="search($event)"></wiki-search-bar>
+  <div class="search-results">
+    <!-- results$ | async - это Subscribe на Observable results$ -->
+    <search-result *ngFor="let result of results$ | async" [data]="result">
+    </search-result>
+  </div>
+</div>

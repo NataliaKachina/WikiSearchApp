@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  width: 56%;
+  margin: 20px auto;
+}
+
+.result-title a {
+  color: #44749D;
+  font-size: 1.5rem;
+}
+
+.result-snippet {
+  text-align: justify;
+}

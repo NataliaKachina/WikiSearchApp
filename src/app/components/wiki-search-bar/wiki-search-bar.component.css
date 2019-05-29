@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  width: 56%;
+  margin: 40px auto;
+}
+
+.form-control,
+.input-group-text {
+  color: #44749D;
+  border: 1px solid #44749D;
+}

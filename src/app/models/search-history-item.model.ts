@@ -1,12 +1,10 @@
-export class SearchResultItem {
-  title: string;
-  description: string;
-  link: string;
+export class SearchHistoryItem {
+  date?: Date;
+  query: string;
 
 
-  constructor(title: string, description: string, link: string) {
-    this.title = title;
-    this.description = description;
-    this.link = link;
+  constructor(query: string, date?: Date) {
+    this.date = date;
+    this.query = query;
   }
 }

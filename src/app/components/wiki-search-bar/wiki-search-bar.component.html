@@ -1,4 +1,4 @@
-<div class="search-bar input-group md-form form-sm form-2 pl-0">
+<div class="search-bar input-group md-form form-sm form-2 pl-0" [ngClass]="theme$ | async">
   <input [(ngModel)]="query" list="searchHistory" class="form-control my-0 py-1 lime-border" type="text"
          aria-label="Search" autocomplete=off>
   <datalist id="searchHistory">

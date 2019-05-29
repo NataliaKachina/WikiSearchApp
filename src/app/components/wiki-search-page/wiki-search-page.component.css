@@ -1,7 +1,12 @@
+.wiki-search-page {
+  min-height: 100%;
+}
+
 ._default {
   background-color: white;
 }
 
 ._dark {
   background-color: grey;
+  color: white;
 }

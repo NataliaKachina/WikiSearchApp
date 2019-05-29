@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {SearchResultItem} from '../../models/search-result.model';
+import {ThemeService} from '../../services/theme.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'search-result',
@@ -9,11 +11,12 @@ import {SearchResultItem} from '../../models/search-result.model';
 export class SearchResultComponent implements OnInit {
 
   @Input() data: SearchResultItem;
+  theme$: Observable<string>;
 
 
-  constructor() {
+  constructor(private themeService: ThemeService) {
+    this.theme$ = themeService.theme$;
   }
-
 
   ngOnInit() {
 

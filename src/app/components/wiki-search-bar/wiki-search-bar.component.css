@@ -1,11 +1,23 @@
+
 :host {
   display: block;
   width: 56%;
   margin: 40px auto;
 }
 
-.form-control,
-.input-group-text {
+/*.form-control,*/
+/*.input-group-text {*/
+  /*color: #44749D;*/
+  /*border: 1px solid #44749D;*/
+/*}*/
+._default .form-control,
+._default .input-group-text {
   color: #44749D;
   border: 1px solid #44749D;
+}
+
+._dark .form-control,
+._dark .input-group-text {
+  color: #411900;
+  border: 1px solid #411900;
 }

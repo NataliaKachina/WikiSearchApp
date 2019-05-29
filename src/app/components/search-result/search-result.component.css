@@ -1,14 +1,25 @@
 :host {
   display: block;
   width: 56%;
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 
 .result-title a {
-  color: #44749D;
   font-size: 1.5rem;
 }
 
 .result-snippet {
   text-align: justify;
+}
+
+._default .result-title a {
+  color: #44749D;
+}
+
+._dark .result-title a {
+  color: #411900;
+}
+
+._dark p {
+  margin-bottom: 0;
 }

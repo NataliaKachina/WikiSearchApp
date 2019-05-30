@@ -15,6 +15,10 @@ export class HeaderBarComponent implements OnInit {
 
   constructor(private themeService: ThemeService) {
     this.theme$ = themeService.theme$;
+    this.themeService.theme$
+      .subscribe(theme => {
+        this.theme = theme;
+      });
   }
 
   ngOnInit() {
